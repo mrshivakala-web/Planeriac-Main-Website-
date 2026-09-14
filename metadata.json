@@ -1,0 +1,6 @@
+{
+  "name": "Planeriac",
+  "description": "Deep Technology and Research Company engineering intelligent systems at the intersection of AI, robotics, computing, health, and education.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
