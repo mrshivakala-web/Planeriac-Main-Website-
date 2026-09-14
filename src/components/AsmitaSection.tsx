@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import { ASMITHA_TRACKS } from '../data';
-import { AsmithaTrack } from '../types';
-import { GraduationCap, BookOpen, Layers, CheckCircle2, ArrowRight, ShieldAlert, Award, FileCode } from 'lucide-react';
+import { ASMITA_TRACKS } from '../data';
+import { AsmitaTrack } from '../types';
+import { GraduationCap, ArrowRight, ArrowUpRight } from 'lucide-react';
 
-interface AsmithaSectionProps {
-  onExploreAsmitha?: () => void;
+interface AsmitaSectionProps {
+  onExploreAsmita?: () => void;
 }
 
-export const AsmithaSection: React.FC<AsmithaSectionProps> = ({ onExploreAsmitha }) => {
-  const [selectedTrack, setSelectedTrack] = useState<AsmithaTrack>(ASMITHA_TRACKS[0]);
+export const AsmitaSection: React.FC<AsmitaSectionProps> = ({ onExploreAsmita }) => {
+  const [selectedTrack, setSelectedTrack] = useState<AsmitaTrack>(ASMITA_TRACKS[0]);
 
   return (
-    <section id="asmitha" className="py-24 sm:py-32 relative border-t border-white/5 bg-[#07090e]">
+    <section id="asmita" className="py-24 sm:py-32 relative border-t border-white/5 bg-[#07090e]">
       {/* Blueprint Grid Background */}
       <div className="absolute inset-0 tech-grid opacity-70 pointer-events-none" />
 
@@ -21,28 +21,28 @@ export const AsmithaSection: React.FC<AsmithaSectionProps> = ({ onExploreAsmitha
           <div>
             <div className="inline-flex items-center space-x-2 px-2.5 py-1 rounded border border-amber-500/20 bg-amber-950/20 font-mono text-[11px] text-amber-400 uppercase tracking-wider mb-4">
               <GraduationCap className="w-3.5 h-3.5" />
-              <span>Education Division // Asmitha</span>
+              <span>Education Division // Asmita</span>
             </div>
             <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-white mb-2">
-              Asmitha
+              Asmita
             </h2>
             <div className="text-lg sm:text-xl text-amber-200/90 font-light">
               Building the next generation of professionals and technologists.
             </div>
           </div>
           <p className="mt-4 md:mt-0 text-sm sm:text-base text-zinc-400 max-w-md">
-            Asmitha focuses on professional and technical education, combining structured learning with practical understanding.
+            Asmita focuses on professional and technical education, combining structured learning with practical understanding.
           </p>
         </div>
 
         {/* 4 Specialized Tracks Selector */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-          {ASMITHA_TRACKS.map((track) => {
+          {ASMITA_TRACKS.map((track) => {
             const isSelected = selectedTrack.code === track.code;
             return (
               <button
                 key={track.code}
-                id={`btn-asmitha-${track.code.toLowerCase()}`}
+                id={`btn-asmita-${track.code.toLowerCase()}`}
                 onClick={() => setSelectedTrack(track)}
                 className={`p-5 rounded-xl text-left border transition-all duration-300 relative overflow-hidden ${
                   isSelected
@@ -97,14 +97,17 @@ export const AsmithaSection: React.FC<AsmithaSectionProps> = ({ onExploreAsmitha
                 <div className="text-xs sm:text-sm text-zinc-300">{selectedTrack.focus}</div>
               </div>
 
-              <button
-                id="btn-explore-asmitha-cta"
-                onClick={onExploreAsmitha}
+              <a
+                id="btn-explore-asmita-cta"
+                href="https://mrshivakala-web.github.io/asmita/"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={onExploreAsmita}
                 className="inline-flex items-center space-x-2 px-6 py-3 rounded-lg bg-amber-400 hover:bg-amber-300 text-black font-mono text-xs font-semibold uppercase tracking-wider transition-colors"
               >
-                <span>Explore Asmitha</span>
-                <ArrowRight className="w-4 h-4" />
-              </button>
+                <span>Explore Asmita</span>
+                <ArrowUpRight className="w-4 h-4" />
+              </a>
             </div>
 
             {/* Right: Core Modules Grid */}

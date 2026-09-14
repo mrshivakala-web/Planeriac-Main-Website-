@@ -1,4 +1,4 @@
-import { DomainNode, TechnologyArea, ResearchTopic, ProjectItem, AsmithaTrack } from './types';
+import { DomainNode, TechnologyArea, ResearchTopic, ProjectItem, AsmitaTrack } from './types';
 
 export const DOMAINS: DomainNode[] = [
   {
@@ -40,9 +40,9 @@ export const DOMAINS: DomainNode[] = [
   {
     id: 'education',
     name: 'EDUCATION',
-    category: 'Asmitha Talent Engine',
+    category: 'Asmita Talent Engine',
     shortDesc: 'Building the next generation of technical talent.',
-    details: 'Through our dedicated Asmitha division, instilling rigorous technical fundamentals, professional mastery, and applied engineering systems in future pioneers.',
+    details: 'Through our dedicated Asmita division, instilling rigorous technical fundamentals, professional mastery, and applied engineering systems in future pioneers.',
     color: '#fbbf24',
     connections: ['ai', 'computing', 'robotics'],
   },
@@ -329,8 +329,8 @@ export const PROJECTS: ProjectItem[] = [
     ],
   },
   {
-    id: 'proj-asmitha-learning-engine',
-    name: 'Asmitha Adaptive Learning Engine',
+    id: 'proj-asmita-learning-engine',
+    name: 'Asmita Adaptive Learning Engine',
     category: 'Education Technology',
     oneLiner: 'Rigorous cognitive tracking and problem decomposition engine for professional learners.',
     description: 'An educational intelligence platform structuring complex accounting, regulatory, and computer engineering curricula into deterministic concept dependency graphs with adaptive diagnostic mastery.',
@@ -345,7 +345,7 @@ export const PROJECTS: ProjectItem[] = [
   },
 ];
 
-export const ASMITHA_TRACKS: AsmithaTrack[] = [
+export const ASMITA_TRACKS: AsmitaTrack[] = [
   {
     code: 'CA',
     title: 'Chartered Accountancy',
@@ -448,6 +448,6 @@ export const COMPANY_VALUES = [
   {
     title: 'Education',
     subtitle: 'Knowledge compounds when shared.',
-    description: 'Through Asmitha, we actively cultivate the next generation of engineers, technologists, and governance leaders. Lasting innovation requires enduring talent.',
+    description: 'Through Asmita, we actively cultivate the next generation of engineers, technologists, and governance leaders. Lasting innovation requires enduring talent.',
   },
 ];

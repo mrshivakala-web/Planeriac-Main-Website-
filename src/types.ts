@@ -1,4 +1,4 @@
-export type NavigationPage = 'home' | 'about' | 'research' | 'projects' | 'asmitha' | 'ventures' | 'contact';
+export type NavigationPage = 'home' | 'about' | 'research' | 'projects' | 'asmita' | 'ventures' | 'contact';
 
 export interface DomainNode {
   id: string;
@@ -47,7 +47,7 @@ export interface ProjectItem {
   specs: { label: string; value: string }[];
 }
 
-export interface AsmithaTrack {
+export interface AsmitaTrack {
   code: string;
   title: string;
   subtitle: string;

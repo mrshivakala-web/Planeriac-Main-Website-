@@ -186,7 +186,7 @@ export const ContactSection: React.FC = () => {
                         <option value="Surgical Robotics">Surgical Robotics Program</option>
                         <option value="Computing & Semiconductors">Computing &amp; Semiconductor Architecture</option>
                         <option value="Biomedical & Genomics">Biomedical &amp; Computational Biology</option>
-                        <option value="Asmitha Education">Asmitha Professional &amp; Tech Education</option>
+                        <option value="Asmita Education">Asmita Professional &amp; Tech Education</option>
                         <option value="Venture Incubation">Technology Ventures &amp; Incubation</option>
                         <option value="General Exploration">General Research Collaboration</option>
                       </select>

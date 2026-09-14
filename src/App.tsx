@@ -6,7 +6,7 @@ import { InterconnectedDomains } from './components/InterconnectedDomains';
 import { TechnologySection } from './components/TechnologySection';
 import { ResearchSection } from './components/ResearchSection';
 import { SurgicalRoboticsShowcase } from './components/SurgicalRoboticsShowcase';
-import { AsmithaSection } from './components/AsmithaSection';
+import { AsmitaSection } from './components/AsmitaSection';
 import { VenturesSection } from './components/VenturesSection';
 import { PhilosophySection } from './components/PhilosophySection';
 import { ConvergenceSection } from './components/ConvergenceSection';
@@ -81,10 +81,8 @@ export default function App() {
               onViewResearch={() => handleNavigate('research')}
             />
 
-            {/* SECTION 6: ASMITHA (EDUCATION DIVISION) */}
-            <AsmithaSection
-              onExploreAsmitha={() => scrollToSection('contact')}
-            />
+            {/* SECTION 6: ASMITA (EDUCATION DIVISION) */}
+            <AsmitaSection />
 
             {/* SECTION 7: VENTURES */}
             <VenturesSection

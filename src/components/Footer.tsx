@@ -80,10 +80,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
               <li>
                 <button
-                  onClick={() => onNavigate('home', 'asmitha')}
+                  onClick={() => onNavigate('home', 'asmita')}
                   className="hover:text-cyan-400 transition-colors"
                 >
-                  Asmitha Education
+                  Asmita Education
                 </button>
               </li>
             </ul>
@@ -141,7 +141,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           {/* Column: Divisions & Governance */}
           <div>
             <div className="font-mono text-xs uppercase tracking-wider text-white mb-4">
-              Education (Asmitha)
+              Education (Asmita)
             </div>
             <ul className="space-y-2.5 font-mono text-xs text-zinc-400">
               <li>
